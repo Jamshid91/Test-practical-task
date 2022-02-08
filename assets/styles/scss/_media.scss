@@ -1,0 +1,92 @@
+// LARGE 
+@media screen and(min-width: 1355px) {
+    
+}
+
+// DESCTOP
+@media screen and(max-width: 1350px) {
+    
+}
+
+// TABLET
+@media screen and(max-width: 1024px) {
+    
+}
+
+@media screen and(max-width: 768px) {
+    .main {
+        &-item {
+            flex-direction: column-reverse;
+            height: auto;
+            padding: 25px 0;
+            .step-plan,
+            .master-class {
+                border-radius: 0;
+            }
+            .step-plan {
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                width: 440px;
+                &__title {
+                    font-size: 100px;
+                    line-height: 120px;
+                }
+                &__img {
+                    width: 100%;
+                }
+                .arrow {
+                   top: 0;
+                   right: 10px;
+                   transform: rotate(-120deg);
+                }
+            }
+            .master-class {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+        }
+    }
+}
+
+// MOBILE
+@media screen and(max-width: 576px) {
+    .container {
+        padding: 0 15px;
+    }
+    .main {
+        &-item {
+            .step-plan {
+                width: 100%;
+                &__title {
+                    font-size: 90px;
+                    line-height: 90px;
+                }
+                &__img {
+                    width: 100%;
+                }
+                .arrow {
+                   top: 30px;
+                   right: 0px;
+                }
+            }
+            .master-class {
+                width: 100%;
+                height: auto;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+@media screen and(max-width: 360px) { 
+    .main {
+        &-item {
+            .step-plan {
+                &__title {
+                    font-size: 80px;
+                    line-height: 80px;
+                }
+            }
+        }
+    }
+}

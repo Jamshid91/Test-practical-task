@@ -1,0 +1,307 @@
+@font-face {
+  font-family: 'GothamPro';
+  src: url("../../font/GothamPro-Medium.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url("../../font/GothamPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GothamPro';
+  src: url("../../font/GothamPro-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --gray: #E5E5E5;
+  --gray-light: #EFEFEF;
+  --black: #0D0D0D;
+  --white: #FFFFFF;
+  --yellow: #F3CE00;
+  --gradient-red: linear-gradient(92.64deg, #FF5621 29.24%, #F21313 83.67%);
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'GothamPro', sans-serif;
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+button:hover {
+  border: none;
+  outline: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+input:hover {
+  border: none;
+  outline: none;
+}
+
+.main {
+  background-color: var(--gray);
+}
+
+.main-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+
+.main-item .step-plan {
+  width: 310px;
+  height: 450px;
+  background-color: var(--gray-light);
+  -webkit-border-top-left-radius: 20px;
+          border-top-left-radius: 20px;
+  -webkit-border-bottom-left-radius: 20px;
+          border-bottom-left-radius: 20px;
+  padding: 46px 5px 46px 20px;
+  text-align: right;
+  position: relative;
+}
+
+.main-item .step-plan__title {
+  font-size: 92px;
+  font-weight: 900;
+  line-height: 88px;
+  word-wrap: break-word;
+  mix-blend-mode: soft-light;
+}
+
+.main-item .step-plan__img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.main-item .step-plan .arrow {
+  position: absolute;
+  bottom: 50px;
+  right: -30px;
+}
+
+.main-item .master-class {
+  width: 440px;
+  height: 450px;
+  -webkit-border-top-right-radius: 20px;
+          border-top-right-radius: 20px;
+  -webkit-border-bottom-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+  background-color: var(--white);
+  padding: 28px 48px;
+  text-align: center;
+  color: var(--black);
+}
+
+.main-item .master-class__title {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.main-item .master-class__sup-text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+
+.main-item .master-class__middle-title {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.main-item .master-class__middle-text {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  line-height: 13px;
+}
+
+.main-item .master-class__middle-text .strong {
+  font-weight: 900;
+}
+
+.main-item .master-class__sub-text {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 34px;
+}
+
+.main-item .master-class .form__text {
+  text-align: start;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.main-item .master-class .form__inp {
+  width: 100%;
+  height: 50px;
+  border: 2px solid var(--yellow);
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 15px;
+  margin-top: 6px;
+}
+
+.main-item .master-class .form__inp::-webkit-input-placeholder {
+  color: var(--black);
+}
+
+.main-item .master-class .form__inp:-ms-input-placeholder {
+  color: var(--black);
+}
+
+.main-item .master-class .form__inp::-ms-input-placeholder {
+  color: var(--black);
+}
+
+.main-item .master-class .form__inp::placeholder {
+  color: var(--black);
+}
+
+.main-item .master-class__btn {
+  width: 100%;
+  height: 50px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  background: var(--gradient-red);
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--white);
+  margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: auto;
+    padding: 25px 0;
+  }
+  .main-item .step-plan,
+  .main-item .master-class {
+    -webkit-border-radius: 0;
+            border-radius: 0;
+  }
+  .main-item .step-plan {
+    -webkit-border-bottom-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+    -webkit-border-bottom-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+    width: 440px;
+  }
+  .main-item .step-plan__title {
+    font-size: 100px;
+    line-height: 120px;
+  }
+  .main-item .step-plan__img {
+    width: 100%;
+  }
+  .main-item .step-plan .arrow {
+    top: 0;
+    right: 10px;
+    -webkit-transform: rotate(-120deg);
+        -ms-transform: rotate(-120deg);
+            transform: rotate(-120deg);
+  }
+  .main-item .master-class {
+    -webkit-border-top-left-radius: 20px;
+            border-top-left-radius: 20px;
+    -webkit-border-top-right-radius: 20px;
+            border-top-right-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 15px;
+  }
+  .main-item .step-plan {
+    width: 100%;
+  }
+  .main-item .step-plan__title {
+    font-size: 90px;
+    line-height: 90px;
+  }
+  .main-item .step-plan__img {
+    width: 100%;
+  }
+  .main-item .step-plan .arrow {
+    top: 30px;
+    right: 0px;
+  }
+  .main-item .master-class {
+    width: 100%;
+    height: auto;
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .main-item .step-plan__title {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
